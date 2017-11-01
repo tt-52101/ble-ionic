@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title> Results</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="padding" class="no-scroll">
+
+   <ion-grid>
+  
+<ion-row>
+  <ion-col xl>
+  <h1></h1>
+  <h1></h1>
+  <ion-card style="height:100%">
+
+    <h1 align="center" class="bold ion-2x"> {{data.name}}</h1>
+    <p align="left" class="ion-1x">Moisture </p>
+    <h1 align="center" class="ion-5x italics bold blue">{{data.moisture}}%</h1>
+    <p align="left" class="ion-1x">Temperature</p>
+    <h2 align="center" class="ion-2x italics bold blue" >{{data.temperature}}&#176;C</h2>
+    <p align="left" class="ion-1x">Test Weight</p>
+    <h1 align="center" class="ion-2x italics bold">{{data.TW}} g/0.5L</h1>
+      
+    <h3 align="left" class="ion-1x bold" >ID 01: {{data.nameOne}}</h3>
+    <h3 align="left" class="ion-1x bold" >ID 02: {{data.nameTwo}}</h3>
+  </ion-card>
+
+</ion-col>
+
+</ion-row> 
+
+</ion-grid>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <button   ion-button large full (click)="PushToSavePage()">Previous Results</button>
+    <button   ion-button large full (click)="ShareResults()">Share</button>
+  </ion-toolbar>
+</ion-footer>

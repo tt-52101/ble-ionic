@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ peripheral.name || 'Device' }} Results</ion-title>
+
+  <!--  <ion-buttons end>
+      <button ion-button color="primary" (click)="share()">Share
+        <ion-icon name="paper"></ion-icon>
+      </button>
+    </ion-buttons> -->
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="padding" class="no-scroll">
+
+  <div *ngIf="arr?.length === 0">
+    <h1> </h1>
+    <h1> </h1>
+    <h1 style="text-align:center;display: block;
+    margin: auto !important;">Waiting for result .....</h1>
+  </div>
+  <div *ngIf="arr?.length > 0">
+  <ion-card style="height:100%">
+    <h1 align="center" class="bold ion-2x"> {{Name}}</h1>
+    <p align="left" class="ion-1x">Moisture </p>
+    <h1 align="center" class="ion-5x italics bold blue">{{Moisture}}%</h1>
+    <p align="left" class="ion-1x">Temperature</p>
+    <h2 align="center" class="ion-2x italics bold blue" >{{temperature}}&#176;C</h2>
+    <p align="left" class="ion-1x">Test Weight</p>
+    <h1 align="center" class="ion-2x italics bold">{{TW}} g/0.5L</h1>
+
+    <h3 align="left" class="ion-1x bold" >{{nameOne}}</h3>
+    <h3 align="left" class="ion-1x bold" >{{nameTwo}}</h3>
+  </ion-card>
+</div>
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+     <button   ion-button large full (click)="PushToSavePage()">Previous Results</button>
+  <button *ngIf="arr?.length > 0" ion-button large full (click)="shareResults()">Share</button>
+  </ion-toolbar>
+</ion-footer>

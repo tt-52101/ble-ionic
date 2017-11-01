@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Select your tester</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="scan()">
+        Scan
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content class="no-scroll">
+
+
+  <ion-grid>
+
+ <ion-row>
+  <ion-col xl>
+  <ion-list >
+  <ion-item ion-item *ngFor="let device of devices" (click)="deviceSelected(device)">
+  <!--<ion-item *virtualItem="let device" (click)="deviceSelected(device)"> -->
+      <h2>Grain Tester Serial Number:</h2>
+      <h1 class="bold ion-2x">{{ device.name || 'Unnamed' }}</h1>
+  </ion-item>
+
+   </ion-list>
+  </ion-col>
+</ion-row>
+
+
+
+</ion-grid>
+
+
+</ion-content>
+
+
+<ion-footer>
+
+  <ion-toolbar>
+    <button  ion-button large full (click)="PushToSavePage()">Previous Results</button>
+  
+    <p align="center">{{ statusMessage }}</p>
+  </ion-toolbar>
+
+</ion-footer>
