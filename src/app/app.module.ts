@@ -20,9 +20,7 @@ import {SavedDisplayPage} from '../pages/saved-display/saved-display';
 import { Toast } from '@ionic-native/toast';
 import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
 import { ScreenOrientation } from '@ionic-native/screen-orientation';
-
-
-
+import { ScreenOrientationMockProvider } from '../providers';
 
 
 @NgModule({
@@ -60,8 +58,7 @@ import { ScreenOrientation } from '@ionic-native/screen-orientation';
     SocialSharing,
     SQLite,
     Toast,
-    ScreenOrientation
-
+    {provide: ScreenOrientation, useClass: ScreenOrientationMockProvider}
   ]
 })
 export class AppModule {}
