@@ -14,11 +14,11 @@ import { FormatTemperatureCPipe } from '../pipes/format-temperature-c/format-tem
 import { FormatTemperatureFPipe } from '../pipes/format-temperature-f/format-temperature-f';
 import { DataService } from '../providers/data/data';
 import { IonicStorageModule } from '@ionic/storage';
-import {SocialSharing} from "@ionic-native/social-sharing";
-import {SaveForLaterPage} from '../pages/save-for-later/save-for-later';
-import {SavedDisplayPage} from '../pages/saved-display/saved-display';
+import { SocialSharing } from "@ionic-native/social-sharing";
+import { SaveForLaterPage } from '../pages/save-for-later/save-for-later';
+import { SavedDisplayPage } from '../pages/saved-display/saved-display';
 import { Toast } from '@ionic-native/toast';
-import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
+import { SQLite } from '@ionic-native/sqlite';
 import { ScreenOrientation } from '@ionic-native/screen-orientation';
 
 
