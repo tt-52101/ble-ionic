@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "82458880718",
+    "firebase_url": "https://ble-thermometer.firebaseio.com",
+    "project_id": "ble-thermometer",
+    "storage_bucket": "ble-thermometer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82458880718:android:50cddd523bb89cfb",
+        "android_client_info": {
+          "package_name": "com.example.ble.thermometer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82458880718-f2nf06d78ed977m4n5muqtn3iovc1l59.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpjS7TrBhgqLj0y8tnoPwmTMU1Cd9hlCs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
