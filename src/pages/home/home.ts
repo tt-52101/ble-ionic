@@ -1,10 +1,10 @@
 import { BLE } from '@ionic-native/ble';
 import { Component, NgZone } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { ToastController } from 'ionic-angular';
+import { ToastController, Platform, AlertController } from 'ionic-angular';
 import { DetailPage } from '../detail/detail';
-import {SaveForLaterPage} from '../save-for-later/save-for-later';
-
+import { SaveForLaterPage } from '../save-for-later/save-for-later';
+declare var FCMPlugin: any;
 
 
 @Component({
@@ -22,7 +22,25 @@ export class HomePage {
   constructor(public navCtrl: NavController,
               private toastCtrl: ToastController,
               private ble: BLE,
-              private ngZone: NgZone) {
+              private ngZone: NgZone,
+              private platform: Platform,
+              private alert: AlertController
+            ) {
+    this.onNotification();
+  }
+
+  async onNotification () {
+    try {
+      await this.platform.ready();
+
+      FCMPlugin.onNotification((data: any) => {
+        this.alert.create({
+          message: JSON.stringify(data)
+        }).present();
+      }, (error) => { console.log(error); });
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   ionViewDidEnter() {
