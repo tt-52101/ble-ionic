@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:82458880718:android:50cddd523bb89cfb",
+        "mobilesdk_app_id": "1:82458880718:android:6db4019b3dbd1e2b",
         "android_client_info": {
-          "package_name": "com.example.ble.thermometer"
+          "package_name": "ca.grainanalyzers.ble.thermometer"
         }
       },
       "oauth_client": [

@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>82458880718-dt5j2222dd31utj9ngsnr55oqor0qv0i.apps.googleusercontent.com</string>
+	<string>82458880718-3pljbk7oerb840omhebos53b71ml23ca.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.82458880718-dt5j2222dd31utj9ngsnr55oqor0qv0i</string>
+	<string>com.googleusercontent.apps.82458880718-3pljbk7oerb840omhebos53b71ml23ca</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDV1ZY0Kc6Yg1oqHdAHt7EqELFpX_rwZOA</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.ble.thermometer</string>
+	<string>ca.grainanalyzers.ble.thermometer</string>
 	<key>PROJECT_ID</key>
 	<string>ble-thermometer</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:82458880718:ios:50cddd523bb89cfb</string>
+	<string>1:82458880718:ios:6db4019b3dbd1e2b</string>
 	<key>DATABASE_URL</key>
 	<string>https://ble-thermometer.firebaseio.com</string>
 </dict>
