@@ -34,9 +34,7 @@ export class HomePage {
       await this.platform.ready();
 
       FCMPlugin.onNotification((data: any) => {
-        this.alert.create({
-          message: JSON.stringify(data)
-        }).present();
+        this.alert.create(data).present();
       }, (error) => { console.log(error); });
     } catch (error) {
       console.log(error);
